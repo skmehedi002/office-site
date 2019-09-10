@@ -374,6 +374,7 @@
     #pp-nav.right {
         display: none;
     }
+
     nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
         height: 55px;
         line-height: 1;
@@ -516,6 +517,7 @@
         text-align: center;
         margin: 0 auto;
         display: table;
+        margin-top: 20px;
     }
 
     .brand-slider .owl-nav {
@@ -550,9 +552,11 @@
         font-size: 17px;
         font-weight: 300;
     }
+
     .review-item {
         box-shadow: none;
     }
+
     .review-image img {
         height: 250px;
         width: 200px !important;
@@ -914,6 +918,7 @@
     .service-sec .title h2 {
         margin-top: 25px;
         margin-bottom: 25px;
+        font-size: 22px;
     }
 
     .service-text h3 {
@@ -922,9 +927,83 @@
         line-height: 1.2;
         margin-top: 10px;
     }
+
+    .team-sec {
+        padding: 0;
+    }
+
+    .team-title {
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .team-title h2 {
+        line-height: 1.2;
+        font-size: 24px;
+    }
+
+    .card-header h2 button {
+        font-size: 20px;
+    }
+
+    .card-header {
+        padding: 0;
+    }
+
+    .accrodion-part li p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .footer-sec {
+        padding-top: 25px;
+    }
+
+    .footer-sec h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .footer-sec li {
+        padding: 2px;
+    }
+
+    .footer-sec a {
+        font-size: 11px;
+    }
+
+    .footer-line {
+        margin: 20px 0;
+    }
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {}
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    
+    .banner-text {
+        height: 200px;
+    }
+
+    .banner-text h3 {
+        top: 100px;
+    }
+
+    .team-title h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .team-sec {
+        background: #fff;
+    }
+
+    .card-header h2 button {
+        font-size: 17px;
+    }
+    .hiring-btn {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+}
 
 @media only screen and (min-width: 0px) and (max-width: 319px) {}
