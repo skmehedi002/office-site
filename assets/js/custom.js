@@ -10,24 +10,6 @@
 (function ($) {
     "use strict";
 
-    /*----------------------------------------
-           Smooth Scroll
-       ----------------------------------------*/
-
-    $(function () {
-        $('a[href*=#]:not([href=#])').click(function () {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top - 95
-                    }, 800);
-                    return false;
-                }
-            }
-        });
-    });
 
     /*========================
             Brand Slider
@@ -63,12 +45,12 @@
         Service Slider
     ==========================*/
     $(".service-slider").owlCarousel({
-        nav: true,
-        navText: ["&#8592;", "&#8594;"],
+        nav: false,
+        navText: ["&#60;", "&#62;"],
         loop: true,
-        dots: true,
+        dots: false,
         margin: 25,
-        autoplay: false,
+        autoplay: true,
         responsive: {
             0: {
                 items: 1,
@@ -84,6 +66,8 @@
         },
     });
 
+   
+    
     /*========================
         Review Slider
     ==========================*/
@@ -181,6 +165,18 @@
         }
 
 
+    });
+
+    /*-----------------------
+      MixIt Up
+      -----------------------*/
+
+    var containerEl = document.querySelector('[data-ref~="mixitup-container"]');
+
+    var mixer = mixitup(containerEl, {
+        selectors: {
+            target: '[data-ref~="mixitup-target"]'
+        }
     });
 
 

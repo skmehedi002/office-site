@@ -44,7 +44,7 @@ a > * {
 a:focus,
 a:hover {
     outline: none;
-    color: #2ca6ef;
+    color: #333;
     text-decoration: none;
 }
 
@@ -155,6 +155,10 @@ label {
     margin-top: 70px !important;
 }
 
+button:focus {
+    outline: 0;
+}
+
 /*--------------------------------
         Header Area
 ---------------------------------*/
@@ -169,14 +173,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 
 .header-sec .navbar-light .navbar-brand {
     margin-left: 30px;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 
 .header-sec .navbar-light .navbar-nav .nav-link {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    padding: 0 20px;
+    padding: 0 15px;
     position: relative;
 }
 
@@ -194,7 +198,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 }
 
 .nav-right-side li {
-    padding: 0 30px;
+    padding: 0 20px;
     border-left: 1px solid #c8c8c8;
 }
 
@@ -210,8 +214,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 
 
 .banner-sec {
-    padding-top: 200px;
-    padding-bottom: 180px;
     background-color: #fff;
     background-image: url("assets/images/banner-top-bg.png");
     background-repeat: no-repeat;
@@ -297,7 +299,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     background: url(assets/images/services-bg.png) no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    padding: 200px 0;
 }
 
 .service-sec .title h2 {
@@ -362,6 +363,38 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     display: inline-block;
 }
 
+
+.service-slider .owl-nav {
+    display: block !important;
+    position: absolute;
+   right: 0;
+    bottom: -185px;
+    border: 1px solid #fff;
+    padding: 2px;
+}
+
+.service-slider .owl-nav button.owl-prev {
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+}
+
+.service-slider .owl-nav button.owl-next {
+   color: #000;
+    background: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+}
+
 /*============================
 		Brand CSS
 ==============================*/
@@ -393,13 +426,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     left: 35px;
     z-index: 999;
     padding: 10px;
-    display: none;
-    transition: .5s;
+    opacity: 0;
+    transition: 1s;
 }
 
 .brand-item:hover .brand-text {
-    display: block;
-    transition: .5s;
+    opacity: 1;
 }
 
 .brand-text h3 {
@@ -446,8 +478,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
     background-image: url(assets/images/testimonial-bg.png);
     background-size: 100% 100%;
     background-position: center;
-    padding-top: 200px;
-    padding-bottom: 230px;
 }
 
 .review-title h2 {
@@ -547,8 +577,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 ==============================*/
 
 .team-sec {
-    padding-top: 100px;
-    padding-bottom: 150px;
     background-color: #fff;
     background-image: url(assets/images/team-bg.png);
     background-repeat: no-repeat;
@@ -977,6 +1005,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {
 .portfolio-tab li {
     font-size: 20px;
     padding: 25px 0;
+}
+
+.portfolio-tab li:hover {
+    cursor: pointer;
+}
+
+li.mixitup-control-active {
+    font-weight: 700;
 }
 
 .full-title h2 {
