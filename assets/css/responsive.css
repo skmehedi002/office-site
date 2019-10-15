@@ -1,5 +1,14 @@
 /* Responsive */
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+      header.header-sec form .nav-item {
+        display: none;
+    }
 
+    .banner-social {
+        display: none;
+    }
+
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     header.header-sec form .nav-item {
         display: none;
